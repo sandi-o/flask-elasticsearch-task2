@@ -1,0 +1,49 @@
+{% if list %}
+<form class="form-horizontal" action="/update" method="post">
+    <a href = "/" id='list' class="btn btn-primary">Add</a>
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">Edit</button>
+    <!-- Modal for update fields-->
+    {% include 'update_form.html' %}
+    <button class="btn btn-default" type="submit" id ='remove'>Delete</button>
+    <table class="table table-hover">
+    <thead>
+      <tr>
+        <th><input type="checkbox" id ='check_all' class="checkboxes" /></th>
+        <th>Index</th>
+        <th>Type</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Power</th>
+        <th>Weakness</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for res in result['hits']['hits'] %}
+        <tr>
+            <th><input type="checkbox" id ='check' name='checkboxes' value="{{ res['_id'] }}~{{ res['_index'] }}~{{ res['_type'] }}" class="checkboxes" /></th>
+            {% if res['_index'] == 'dc' %}
+                <td>DC comics</td>
+            {% else %}
+                <td>Marvel Comics</td>
+            {% endif %}
+            <td>{{ res['_type'] }}</td>
+            <td>{{ res['_source']['id'] }}</td>
+            <td>{{ res['_source']['name'] }}</td>
+            <td>{{ res['_source']['power'] }}</td>
+            <td>{{ res['_source']['weakness'] }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</form>
+{% elif bulk %}
+    <!-- form for bulk adding of document-->
+        <form class="form-horizontal" action="/save_bulk" method="post" enctype="multipart/form-data">
+        Select a file : <input type="file" name="bulk_file">
+        <hr>
+        <button class="btn btn-primary" type="submit" id ='upload'>Upload</button>
+    </form>
+{% else %}
+    <!-- create form -->
+    {% include 'create_form.html' %}
+{% endif %}

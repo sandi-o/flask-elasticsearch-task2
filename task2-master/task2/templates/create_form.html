@@ -1,0 +1,28 @@
+<form class="form-inline" action="/save" method="post">
+    <div class="form-group">
+        <label>Select Index:</label>
+        <select name='es_index'>
+            <option value='marvel'>Marvel Comics</option>
+            <option value='dc'>DC Comics</option>
+        </select>
+        <label>Select Type:</label>
+        <select name='es_type'>
+            <option value='superhero'>Hero</option>
+            <option value='villain'>Villain</option>
+        </select>
+    </div>
+        <hr/>
+    <div>
+        <label>Hero Index.:</label>
+        <input type="number" class="form-control" name="id" id="id">
+        <label>Name:</label>
+        <input type="text" class="form-control" name="name" id="name">
+        <label>Superpower:</label>
+        <input type="text" class="form-control" name="power" id="power">
+        <label>Weakness:</label>
+        <input type="text" class="form-control" name="weakness" id="weakness">
+    </div>
+    <hr/>
+    <button id='add' class="btn btn-success">Add</button>
+    <a href = "/documentlist" id='list' class="btn btn-primary">Go To List</a>
+</form>

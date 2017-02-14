@@ -1,0 +1,20 @@
+{ "index" : {"_index": "marvel", "_type": "superhero"} }
+{ "id": "990", "name": "Black Panther", "power": "Super Reflexes", "weakness": "dad"}
+{ "index" : {"_index": "marvel", "_type": "superhero"}}
+{ "id": "888", "name": "Scarlet Witch", "power": "Witchcraft", "weakness": "quicksilver"}
+{ "index" : {"_index": "marvel", "_type": "superhero"} }
+{ "id": "900", "name": "Spiderman", "power": "Spider Senses", "weakness": "water spout"}
+{ "index" : {"_index": "marvel", "_type": "superhero"} }
+{ "id": "470", "name": "Quicksilver", "power": "Super Reflexes", "weakness": "dad"}
+{ "index" : {"_index": "marvel", "_type": "villain"} }
+{ "id": "500", "name": "Loki", "power": "Supernatural Powers", "weakness": "avengers"}
+{ "index" : {"_index": "dc", "_type": "superhero"} }
+{ "id": "546", "name": "Green Arrow", "power": "Bow and Arrow", "weakness": "felicity smoak"}
+{ "index" : {"_index": "dc", "_type": "villain"} }
+{ "id": "994", "name": "Deathstroke", "power": "Super Reflexes", "weakness": "green arrow"}
+{ "index" : {"_index": "dc", "_type": "villain"} }
+{ "id": "223", "name": "Doomsday", "power": "Supernatural Powers", "weakness": "kryptonite"}
+{ "index" : {"_index": "dc", "_type": "villain"} }
+{ "id": "456", "name": "The Magician", "power": "Bow and Arrow", "weakness": "thea queen"}
+{ "index" : {"_index": "dc", "_type": "superhero"} }
+{ "id": "778", "name": "Wonder Woman", "power": "Magic Lasso", "weakness": "the startrek guy"}

@@ -1,0 +1,38 @@
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Update Document(s)</h4>
+            </div>
+            <div class="modal-body">
+                    <div>
+                        <label>Select Index:</label>
+                        <select name='es_index'>
+                            <option value='marvel'>Marvel Comics</option>
+                            <option value='dc'>DC Comics</option>
+                        </select>
+                        <label>Select Type:</label>
+                        <select name='es_type'>
+                            <option value='superhero'>Hero</option>
+                            <option value='villain'>Villain</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div>
+                        <label>Hero Index.:</label>
+                        <input type="number" class="form-control" name="id" id="id">
+                        <label>Name:</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                        <label>Superpower:</label>
+                        <input type="text" class="form-control" name="power" id="power">
+                        <label>Weakness:</label>
+                        <input type="text" class="form-control" name="weakness" id="weakness">
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success" >Update</button>
+            </div>
+          </div>
+    </div>
+</div>
